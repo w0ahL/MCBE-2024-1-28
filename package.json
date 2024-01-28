@@ -1,0 +1,18 @@
+{
+  "name": "MCBE-2024-1-28",
+  "version": "1.0.0-public",
+  "description": "MCBE Exploit 2024 - All rights to 104xvision",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "104xvision",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bedrock-protocol": "^3.33.1",
+    "node-fetch": "^2.6.11",
+    "prismarine-auth": "^2.4.0",
+    "prompt-sync": "^4.2.0",
+    "uuid": "^9.0.1"
+  }
+}
