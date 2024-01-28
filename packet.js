@@ -24,7 +24,7 @@ module.exports.packetSend = (realmData) => {
 			PlatformOnlineId: (deviceOS === 12) ? generateRandomString(19, "1234567890") : "",
 			PlatformUserId: (deviceOS === 12) ? uuidv4() : "",
 			PlayFabId: generateRandomString(16, "qwertyuiopasdfghjklzxcvbnm12345678901"),
-            PersonaPieces: 0xFFFFFFF
+            		PersonaPieces: 0xFFFFFFF
 			}
 		}
 
