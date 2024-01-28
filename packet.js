@@ -25,8 +25,8 @@ module.exports.packetSend = (realmData) => {
 			PlatformUserId: (deviceOS === 12) ? uuidv4() : "",
 			PlayFabId: generateRandomString(16, "qwertyuiopasdfghjklzxcvbnm12345678901"),
             		PersonaPieces: 0xFFFFFFF
-			}
 		}
+	}
 
 	const client = new Client({
 		...options
@@ -34,14 +34,14 @@ module.exports.packetSend = (realmData) => {
 
 	client.connect();
 
-    client.once('resource_packs_info', async () => {
-        client.queue('resource_pack_client_response', {
-            response_status: 'completed',
-            resourcepackids: []
-        })
-    })
+    	client.once('resource_packs_info', async () => {
+        	client.queue('resource_pack_client_response', {
+            		response_status: 'completed',
+           		resourcepackids: []
+        	})
+    	})
 
-    client.on('start_game', async (packet) => {
-        console.log('Joined');
-    })
+    	client.on('start_game', async (packet) => {
+        	console.log('Joined');
+    	})
 };
